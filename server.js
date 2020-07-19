@@ -8,26 +8,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json())
 
-//dummy notes
-const notesArr = [
-    {
-        title:"One",
-        body: "What was I thinking when I signed up for this?"
-    },
-    {
-        title:"Two",
-        body: "Well who knows if this works"
-    },
-];
-
-//Routing user to html 
-app.get("/", (req, res)=>{
-    res.sendFile(path.join(__dirname,"./public/index.html"));
-})
-app.get("/notes", (req, res)=>{
-    res.sendFile(path.join(__dirname, "./public/notes.html"))
-} )
-
+//Routing 
+require("./routes/htmlRoutes")(app);
 
 //server Listening
 app.listen(PORT, function(){
