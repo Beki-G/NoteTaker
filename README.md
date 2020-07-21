@@ -21,6 +21,8 @@ Use `npm i` to install dependancies.
 Access your notes from any device with internet to add, modify, and delete. Time and space saver too!
 
 ### Deployment
+Check out the deployment: [Click Here!](https://whispering-basin-85163.herokuapp.com/)
+
 ![GIF of deployed application](./imgs/deployment.gif)
 
 
